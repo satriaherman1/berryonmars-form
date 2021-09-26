@@ -1,0 +1,53 @@
+
+.input-phone-box{
+    background: rgba(0,0,0, 1);
+    border-radius: 12px;
+    display: flex;
+}
+
+.phone-select{
+    background-position: 14px center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgba(0,0,0,1);
+    outline: none;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    cursor: pointer;
+}
+
+.phone-select option{
+    display: none;
+}
+
+.phone-select:focus{
+    outline: none !important;
+    border: none !important;
+}
+.custom-phone-list{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    margin-top: -10px ;
+    left: 0;
+}
+
+.custom-phone-list li{
+    list-style: none;
+    background: rgba(0,0,0,1);
+    padding: 20px 12px;
+}
+
+.custom-phone-list li:hover{
+    cursor: pointer;
+    transition: .3s;
+    background: rgb(41, 41, 41);
+}
+.select-phone-wrapper{
+    width: 19%;
+    color: #fff;
+}

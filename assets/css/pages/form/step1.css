@@ -1,0 +1,14 @@
+@import url('../initial.css');
+@import url('../../component/custom-checkbox/custom-checkbox.css');
+
+
+.jobs-list .checkbox-box{
+    min-height: 132px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1031px) {
+    .jobs-list .checkbox-box{
+        min-height: 153.6px;
+    }
+}

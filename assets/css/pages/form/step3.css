@@ -1,0 +1,31 @@
+@import url('../initial.css');
+@import url('../../component/custom-checkbox/custom-checkbox.css');
+@import url('../../component/custom-checkbox/custom-checkbox-modal.css');
+
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+    position: relative;
+}
+
+.checkbox-box{
+    width: 132px;
+    height: 132px;
+    max-width: 182px;
+    margin: auto;
+}
+
+
+@media screen and (min-width:768px) {
+    .skill-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:1032px) {
+    .skill-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

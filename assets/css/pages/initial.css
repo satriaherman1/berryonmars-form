@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(0, 0, 0,1);
+    background-image: url('../../img/bg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.step-indicator{
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    color: #F9F9F9;
+}
+
+
+.form{
+    background-image: url('../../img/form-bg.svg');
+    background-color: #161616;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12px 25px;
+    border-radius: 12px;
+    /* backdrop-filter: blur(32px); */
+    border: 2px solid;
+    border-image-source: linear-gradient(to right , rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0));
+}

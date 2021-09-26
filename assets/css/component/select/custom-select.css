@@ -1,0 +1,95 @@
+
+
+.custom-select-field{
+    position: relative;
+    z-index: 1;
+}
+
+.custom-select, .custom-select-search{
+    background: rgba(0, 0, 0, 1);
+    width: 100%;
+    padding: 18px 25px;
+    outline: none;
+    color: var(--colorGray);
+    text-indent: 5px;
+    appearance: none;
+    position: relative;
+    background-image: url('../../../img/icon/arrow-up.svg');
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    border: 0px !important;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden !important;
+    box-shadow: unset;
+}
+
+.custom-select:focus option, .custom-select-search:focus option{
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: unset;
+    
+}
+
+.custom-select option, .custom-select-search option{
+    box-shadow: unset;
+    padding: 12px;
+    display: none;
+    overflow: hidden;
+    border: 0px !important;
+    outline: none !important;
+}
+
+
+
+.custom-select-list, .custom-select-search-list{
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.custom-select-list li{
+    list-style: none;
+    color: #fff;
+    background: var(--colorSemiBlack);
+    width: 100%;
+    padding: 16px 24px;
+    transition: .2s;
+    position: relative;
+    z-index: 999;
+    border-right: 1px solid #484848;
+    border-left: 1px solid #484848;
+}
+
+.custom-select-list li:hover{
+    background: var(--colorOptionHover) ;
+    cursor: pointer;
+}
+
+.custom-select-list li:last-child{
+    margin-bottom: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom: 1px solid #484848;
+}
+
+
+/* search input */
+.select-search{
+    background: var(--colorSemiBlack);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 1px solid #484848 ;
+    width: 100%;
+    padding: 18px 20px 18px 12%;
+    outline: none;
+    color: white;
+    background-image: url('../../../img/icon/search.svg');
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    text-indent: 5px;
+    appearance: none;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+}

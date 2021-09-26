@@ -1,0 +1,311 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages/form/step3.css">
+    <title>Bryanmars</title>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between py-4">
+            <img src="assets/img/Logo.svg" width="80px" alt="" srcset="">
+            <div class="step-indicator">
+                Step 3 / 5
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-md-12 col-lg-5 px-3 mt-4">
+                    <h1 class="text-white text-center text-md-start">Let us match you with the world’s best talent</h1>
+                </div>
+                <div class="col-md-12 col-lg-7 mt-4">
+                    <form action="" class="form">
+                        <p class="txt-gray">select at least 1 skill</p>
+
+                        <div class="skill-list">
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="js">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="javascriptTarget"></div>
+                                        <img src="assets/img/icon/js.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="js"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Javascript</div>
+
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#javascriptTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button" class="button button-outlined text-white-50"
+                                            onclick="addContentToTarget(false, '#javascriptTarget', '#js' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block"
+                                            onclick="addContentToTarget(true, '#javascriptTarget' , '#js')">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="css">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="cssTarget"></div>
+                                        <img src="assets/img/icon/css.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="css"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">CSS</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#cssTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button" class="button button-outlined text-white-50"
+                                            onclick="addContentToTarget(false, '#cssTarget', '#css' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block"
+                                            onclick="addContentToTarget(true, '#cssTarget' , '#css')">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="html">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="HTMLTarget"></div>
+                                        <img src="assets/img/icon/html.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="html"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">HTML</div>
+                                    </div>
+                                </label>
+
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#HTMLTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button" class="button button-outlined text-white-50"
+                                            onclick="addContentToTarget(false, '#HTMLTarget', '#html' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block"
+                                            onclick="addContentToTarget(true, '#HTMLTarget' , '#html')">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="php">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="phpTarget"></div>
+                                        <img src="assets/img/icon/php.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="php"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">PHP</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#phpTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button" class="button button-outlined text-white-50"
+                                            onclick="addContentToTarget(false, '#phpTarget', '#php' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block"
+                                            onclick="addContentToTarget(true, '#phpTarget' , '#php')">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="python">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/python.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="python"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">Python</div>
+                                </div>
+                            </label>
+                            <label for="swift">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/swift.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="swift"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">Swift</div>
+                                </div>
+                            </label>
+                            <label for="c-sharp">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/c-sharp.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="c-sharp"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">C#</div>
+                                </div>
+                            </label>
+                            <label for="react">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/react.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="react"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">React</div>
+                                </div>
+                            </label>
+                            <label for="ruby">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/ruby.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="ruby"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">Ruby</div>
+                                </div>
+                            </label>
+                            <label for="nodejs">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/nodejs.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="nodejs"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">Node.js</div>
+                                </div>
+                            </label>
+                            <label for="mysql">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/mysql.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="mysql"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">MySQL</div>
+                                </div>
+                            </label>
+                            <label for="advice">
+                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
+                                    <img src="assets/img/icon/advice.svg" class="checkbox-img" width="37.33px" alt=""
+                                        srcset="">
+                                    <input type="checkbox" class="d-none" name="" id="advice"
+                                        onchange="skillCheckChange(this)">
+                                    <div class="mt-1 txt-gray font-normal checkbox-text">Advice</div>
+                                </div>
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+                        <a class="button button-green ms-auto d-block mb-1" href="step2.html">NEXT</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/component/form/custom-checkbox.js"></script>
+    <script src="assets/js/component/form/custom-checkbox-modal.js"></script>
+    <script src="assets/js/component/select/custom-select.js"></script>
+    <script src="assets/js/component/form/chip.js"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>

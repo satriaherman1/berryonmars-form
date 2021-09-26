@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root{
+    --colorGray : #adadad;
+    --colorGreen : rgba(24, 169, 65, 1);
+    --colorLightGreen : rgb(17, 146, 54);
+    --colorSemiBlack : #111111;
+    --colorOptionHover : #202020;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h-fit{
+    height: fit-content !important;
+}
+
+a{
+    width: fit-content;
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover{
+    color: inset;
+}
+
+a.button-green{
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+}
+
+h6{
+    font-size: 18px;
+}
+
+.gray-line{
+    border-top: 1.8px solid #adadad;
+}
+
+@media screen and (min-width : 768px) {
+    h1{
+        font-size: 64px;
+    }
+}

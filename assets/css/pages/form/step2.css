@@ -1,0 +1,7 @@
+@import url('../initial.css');
+@import url('../../component/form/custom-phone-input.css');
+
+.jobs-list .checkbox-box{
+    min-height: 132px;
+    margin-top: 20px;
+}

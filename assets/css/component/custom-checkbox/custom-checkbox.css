@@ -1,0 +1,38 @@
+.checkbox-box{
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 158px;
+    width: 194px;
+    padding: 15px 12px;
+    border-radius: 14px;
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+    /* position: relative; */
+
+}
+
+.checkbox-box.checked{
+    background: rgb(255, 255, 255);
+}
+
+.checkbox-box.checked .checkbox-img{
+    filter: brightness(0%);
+}
+
+.checkbox-box.checked .checkbox-text{
+    color: #000 !important;
+}
+
+
+.checked-img{
+    position: absolute;
+    width: 20px;
+    top: 7%;
+    right: 12px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.checked .checked-img{
+    opacity: 1;
+}
