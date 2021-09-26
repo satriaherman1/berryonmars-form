@@ -1,1 +1,5 @@
 @import url('../initial.css');
+
+body{
+    background-image: url('../../../img/completed-bg.svg') !important;
+}
