@@ -9,7 +9,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/pages/form/step3.css">
+    <link rel="stylesheet" href="assets/css/pages/form/step4.css">
     <title>Bryanmars</title>
 </head>
 
@@ -32,7 +32,29 @@
                 <div class="col-md-12 col-lg-7 mt-4">
                     <form action="" class="form py-4">
                         <p class="text-white">We’ll rocmmend you jobs based on your response below</p>
-                        <p class="txt-gray">Linkedin profile URL</p>
+                        <br>
+                        <p class="txt-gray mb-4 font-semibold">Linkedin profile URL</p>
+                        <input type="url" name="" class="custom-input" id=""
+                            placeholder="https://www.linkedin.com/in/username">
+                        <p class="text-center txt-gray mt-3">Or</p>
+                        <div class="custom-file-upload">
+                            <label for="resume">
+                                <div class="upload-icon-box mx-auto p-3 w-fit h-fit">
+                                    <img src="assets/img/icon/file.svg" width="30px" alt="" srcset="">
+                                </div>
+                                <br>
+                                <p class="text-white font-semibold text-center text-18 mb-1">upload resume</p>
+                                <p class="txt-gray text-center  mb-0">PDF, max size 2MB</p>
+                                <input type="file" name="resume" class="d-none" id="resume">
+                            </label>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div class="d-flex justify-content-between">
+                            <a class="button button-transparent text-white d-block mb-1" href="step3.html">Previous</a>
+                            <a class="button button-green d-block mb-1" href="step5.html">Next</a>
+                        </div>
                     </form>
                 </div>
             </div>

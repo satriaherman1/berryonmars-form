@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-12 col-lg-7 mt-4">
                     <form action="" class="form">
-                        <p class="txt-gray">select at least 1 skill</p>
+                        <p class="text-white-50 mb-4">select at least 1 skill</p>
 
                         <div class="skill-list">
                             <div class="position-relative d-flex justify-content-center align-items-center">
@@ -66,11 +66,12 @@
                                     </div>
 
                                     <div class="d-flex mt-3">
-                                        <button type="button" class="button button-outlined text-white-50"
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
                                             onclick="addContentToTarget(false, '#javascriptTarget', '#js' )">
                                             Cancel
                                         </button>
-                                        <button type="button" class="button button-green ms-3 d-block"
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
                                             onclick="addContentToTarget(true, '#javascriptTarget' , '#js')">
                                             Add
                                         </button>
@@ -109,11 +110,12 @@
                                     </div>
 
                                     <div class="d-flex mt-3">
-                                        <button type="button" class="button button-outlined text-white-50"
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
                                             onclick="addContentToTarget(false, '#cssTarget', '#css' )">
                                             Cancel
                                         </button>
-                                        <button type="button" class="button button-green ms-3 d-block"
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
                                             onclick="addContentToTarget(true, '#cssTarget' , '#css')">
                                             Add
                                         </button>
@@ -153,11 +155,12 @@
                                     </div>
 
                                     <div class="d-flex mt-3">
-                                        <button type="button" class="button button-outlined text-white-50"
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
                                             onclick="addContentToTarget(false, '#HTMLTarget', '#html' )">
                                             Cancel
                                         </button>
-                                        <button type="button" class="button button-green ms-3 d-block"
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
                                             onclick="addContentToTarget(true, '#HTMLTarget' , '#html')">
                                             Add
                                         </button>
@@ -195,101 +198,380 @@
                                     </div>
 
                                     <div class="d-flex mt-3">
-                                        <button type="button" class="button button-outlined text-white-50"
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
                                             onclick="addContentToTarget(false, '#phpTarget', '#php' )">
                                             Cancel
                                         </button>
-                                        <button type="button" class="button button-green ms-3 d-block"
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
                                             onclick="addContentToTarget(true, '#phpTarget' , '#php')">
                                             Add
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <label for="python">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/python.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="python"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">Python</div>
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="python">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="pythonTarget"></div>
+                                        <img src="assets/img/icon/python.svg" class="checkbox-img" width="37.33px"
+                                            alt="" srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="python"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Python</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#pythonTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#pythonTarget', '#python' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#pythonTarget' , '#python')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="swift">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/swift.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="swift"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">Swift</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="swift">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="swiftTarget"></div>
+                                        <img src="assets/img/icon/swift.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="swift"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Swift</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#swiftTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#swiftTarget', '#swift' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#swiftTarget' , '#swift')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="c-sharp">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/c-sharp.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="c-sharp"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">C#</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="c-sharp">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="c-sharpTarget"></div>
+                                        <img src="assets/img/icon/c-sharp.svg" class="checkbox-img" width="37.33px"
+                                            alt="" srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="c-sharp"
+                                            onchange="skillCheckChange(this , true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">C#</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#c-sharpTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#c-sharpTarget', '#c-sharp' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#c-sharpTarget' , '#c-sharp')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="react">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/react.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="react"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">React</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="react">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="reactTarget"></div>
+                                        <img src="assets/img/icon/react.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="react"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">React</div>
+                                    </div>
+
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#reactTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#reactTarget', '#react' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#reactTarget' , '#react')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="ruby">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/ruby.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="ruby"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">Ruby</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="ruby">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="rubyTarget"></div>
+                                        <img src="assets/img/icon/ruby.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="ruby"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Ruby</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#rubyTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#rubyTarget', '#ruby' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#rubyTarget' , '#ruby')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="nodejs">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/nodejs.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="nodejs"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">Node.js</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="nodejs">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="nodejsTarget"></div>
+                                        <img src="assets/img/icon/nodejs.svg" class="checkbox-img" width="37.33px"
+                                            alt="" srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="nodejs"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Node.js</div>
+                                    </div>
+                                </label>
+
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#nodejsTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#nodejsTarget', '#nodejs' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#nodejsTarget' , '#nodejs')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="mysql">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/mysql.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="mysql"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">MySQL</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="mysql">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="mysqlTarget"></div>
+                                        <img src="assets/img/icon/mysql.svg" class="checkbox-img" width="37.33px" alt=""
+                                            srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="mysql"
+                                            onchange="skillCheckChange(this , true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">MySQL</div>
+                                    </div>
+                                </label>
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#mysqlTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#mysqlTarget', '#mysql' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#mysqlTarget' , '#mysql')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
-                            <label for="advice">
-                                <div class="checkbox-box justify-content-center d-flex align-items-center flex-column">
-                                    <img src="assets/img/icon/checked.svg" alt="" class="checked-img">
-                                    <img src="assets/img/icon/advice.svg" class="checkbox-img" width="37.33px" alt=""
-                                        srcset="">
-                                    <input type="checkbox" class="d-none" name="" id="advice"
-                                        onchange="skillCheckChange(this)">
-                                    <div class="mt-1 txt-gray font-normal checkbox-text">Advice</div>
+                            </div>
+
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <label for="advice">
+                                    <div
+                                        class="checkbox-box justify-content-center d-flex align-items-center flex-column">
+                                        <div class="img-checked" id="adviceTarget"></div>
+                                        <img src="assets/img/icon/advice.svg" class="checkbox-img" width="37.33px"
+                                            alt="" srcset="">
+                                        <input type="checkbox" class="d-none" name="" id="advice"
+                                            onchange="skillCheckChange(this, true)">
+                                        <div class="mt-1 txt-gray font-normal checkbox-text">Advice</div>
+                                    </div>
+                                </label>
+
+                                <div class="checkbox-modal invisible">
+                                    <div class="top-box"></div>
+                                    <p class="txt-gray mb-0">
+                                        Years of professional experience
+                                    </p>
+                                    <div class="position-relative custom-select-field mt-2">
+                                        <select class="custom-select" onclick="selectClick(this)"
+                                            onchange="changeContentTarget('#nodejsTarget', this)">
+                                            <option value="" selected disabled>Select Experienced</option>
+                                            <option value="3 Years">3 Years</option>
+                                            <option value="4 Years">5 Years</option>
+                                            <option value="6 Years">6 Years</option>
+                                        </select>
+                                        <ul class="custom-select-list d-none">
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button type="button"
+                                            class="button button-outlined text-white-50 transition-unset"
+                                            onclick="addContentToTarget(false, '#adviceTarget', '#advice' )">
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="button button-green ms-3 d-block transition-unset"
+                                            onclick="addContentToTarget(true, '#adviceTarget' , '#advice')">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <br>
                         <br>
-                        <a class="button button-green ms-auto d-block mb-1" href="step2.html">NEXT</a>
+
+                        <div class="d-flex justify-content-between">
+                            <a class="button button-transparent text-white d-block mb-1" href="step2.html">Previous</a>
+                            <a class="button button-green d-block mb-1" href="step4.html">Next</a>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (min-width:1032px) {
+@media screen and (min-width:1275px) {
     .skill-list{
         grid-template-columns: repeat(4, 1fr);
     }

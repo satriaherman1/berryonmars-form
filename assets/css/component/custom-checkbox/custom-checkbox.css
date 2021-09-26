@@ -1,7 +1,7 @@
 .checkbox-box{
     border: 1px solid rgba(255, 255, 255, 1);
     height: 158px;
-    width: 194px;
+    width: 100%;
     padding: 15px 12px;
     border-radius: 14px;
     position: relative;
@@ -35,4 +35,11 @@
 
 .checked .checked-img{
     opacity: 1;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .checkbox-box{
+        width: 194px;
+    }
 }

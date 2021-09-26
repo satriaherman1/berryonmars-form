@@ -8,12 +8,12 @@ const skillCheckChange = (el, modalStatus = false) => {
         if(modalStatus){
             modal.classList.remove('invisible')
         }
-        else{
-            modal.classList.add('invisible')
-        }
+      
     }
     else{
         el.parentElement.classList.remove('checked')
-        modal.classList.add('invisible')
+        if(modalStatus){
+            modal.classList.add('invisible')
+        }
     }
 }
