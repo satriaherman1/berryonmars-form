@@ -54,7 +54,6 @@
     background: var(--colorSemiBlack);
     width: 100%;
     padding: 16px 24px;
-    transition: .2s;
     position: relative;
     z-index: 999;
     border-right: 1px solid #484848;
@@ -71,6 +70,12 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border-bottom: 1px solid #484848;
+}
+.custom-select-list li:first-child{
+    margin-top: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top: 1px solid #484848;
 }
 
 
