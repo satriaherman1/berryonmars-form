@@ -11,7 +11,6 @@ const optionListClick = (opt, index) => {
 const selectClick = (select, target = false) => {
     const currentCustomSelectList = select.parentElement.querySelector('.custom-select-list')
     currentCustomSelectList.classList.toggle('d-none')
-    
 }
 
 const changeContentTarget = (target, self = false) => {

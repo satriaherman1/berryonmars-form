@@ -1,0 +1,10 @@
+{
+    "name" : "satria-portfolio",
+    "short_name" : "satria",
+    "start_url" : "/",
+    "display" : "standalone",
+    "theme_color" : "#1f5ed1",
+    "orientation" : "portrait",
+    "scope" : "/",
+    "background_color" : "#ffffff"
+}
