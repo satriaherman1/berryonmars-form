@@ -13,6 +13,7 @@ const deleteChip = (chip) => {
             if(matches){
                 id = item.textContent.split('-')[0]
                 elementWithId = document.querySelector(`#${id}`)
+                console.log(elementWithId)
                 elementWithId.checked = false
                 elementWithId.onchange()
             }   

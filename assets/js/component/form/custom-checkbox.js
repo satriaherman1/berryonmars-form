@@ -17,3 +17,12 @@ const skillCheckChange = (el, modalStatus = false) => {
         }
     }
 }
+
+const addSKill = (el, modalStatus = false) => {
+    let modal;
+    if(modalStatus){
+        modal = el.parentElement.querySelector('.add-skill-modal')
+    }
+
+    modal.classList.remove('invisible')
+}

@@ -10,13 +10,20 @@
     position: relative;
 }
 
-.checkbox-box{
+.checkbox-box , .add-skill-box{
     width: 132px;
     height: 132px;
     max-width: 182px;
     margin: auto;
 }
 
+.add-skill-box{
+    border: none;
+    outline: none;
+    background: #000;
+    border-radius: 16px;
+    cursor: pointer;
+}
 
 @media screen and (min-width:768px) {
     .skill-list{

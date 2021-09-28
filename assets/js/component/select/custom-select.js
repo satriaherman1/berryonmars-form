@@ -4,11 +4,11 @@ const allSelect = document.querySelectorAll('.custom-select')
 const optionListClick = (opt, index) => {
     const currentSelect = customSelectField[index].querySelector('select');
     currentSelect.value = opt.textContent;
-    opt.parentElement.classList.add('d-none');
     currentSelect.onchange()
+    opt.parentElement.classList.add('d-none');
 }
 
-const selectClick = (select, target = false) => {
+const selectClick = (select) => {
     const currentCustomSelectList = select.parentElement.querySelector('.custom-select-list')
     currentCustomSelectList.classList.toggle('d-none')
 }

@@ -1,4 +1,4 @@
-.checkbox-modal{
+.checkbox-modal, .add-skill-modal{
     position: absolute;
     width: 318px;
     bottom: -150%;
