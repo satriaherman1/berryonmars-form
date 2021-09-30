@@ -15,3 +15,17 @@ function addContentToTarget(status, target, checkboxId) {
         
     }
 }
+
+function addMoreSkill(add , currentElement, inputTarget , selectTarget){
+    if(add){
+        const input = document.querySelector(inputTarget)
+        const select = document.querySelector(selectTarget)
+        const chipList = document.querySelector('.chips-list');
+        addChip(chipList, input.value + select.value)
+        input.value = ''
+        select.value = ''
+    }
+
+    const modal = currentElement.parentElement.parentElement
+    modal.classList.add('invisible')
+}
