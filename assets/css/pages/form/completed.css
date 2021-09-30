@@ -2,4 +2,11 @@
 
 body{
     background-image: url('../../../img/completed-bg.svg') !important;
+    background-position: -110vw center;
+}
+
+@media screen and (min-width : 1024px) {
+    body{
+        background-position: -10vw center;
+    }
 }
