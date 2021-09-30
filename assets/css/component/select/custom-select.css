@@ -28,13 +28,11 @@
     border: 0px !important;
     outline: none !important;
     box-shadow: unset;
-    
 }
 
 .custom-select option, .custom-select-search option{
     box-shadow: unset;
     padding: 12px;
-    display: none;
     overflow: hidden;
     border: 0px !important;
     outline: none !important;
@@ -46,6 +44,7 @@
     padding-left: 0;
     position: absolute;
     width: 100%;
+    display: none;
 }
 
 .custom-select-list li{
@@ -97,4 +96,19 @@
     position: relative;
     z-index: 999;
     overflow: hidden;
+}
+
+@media screen and (min-width : 768px) {
+    .custom-select option, .custom-select-search option{
+        display: none;
+    }
+
+    .custom-select-list, .custom-select-search-list{
+        padding-left: 0;
+        position: absolute;
+        width: 100%;
+        display: block;
+    }
+
+
 }
