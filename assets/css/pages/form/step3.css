@@ -5,16 +5,24 @@
 
 .skill-list{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px 15px;
     position: relative;
 }
-
 .checkbox-box , .add-skill-box{
-    width: 132px;
-    height: 132px;
+    width: 62px;
+    height: 62px;
+
     max-width: 182px;
     margin: auto;
+}
+
+.checkbox-box img, .add-skill-box img{
+    width: 20px !important;
+}
+
+.checkbox-box .checkbox-text{
+    display: none;
 }
 
 .add-skill-box{
@@ -28,6 +36,17 @@
 @media screen and (min-width:768px) {
     .skill-list{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .checkbox-box , .add-skill-box{
+        width: 132px;
+        height: 132px;
+    }
+
+    .checkbox-box .checkbox-text{
+        display: unset;
+    }
+    .checkbox-box img, .add-skill-box img{
+        width: 37.33px !important;
     }
 }
 
