@@ -54,6 +54,10 @@ h6{
     transition: unset !important;
 }
 
+.nowrap{
+    white-space: nowrap;
+}
+
 .gray-line{
     border-top: 1.8px solid #adadad;
 }

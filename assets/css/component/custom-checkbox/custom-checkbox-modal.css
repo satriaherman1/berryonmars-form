@@ -10,7 +10,11 @@
     border-radius: 12px;
     border: 1px solid rgba(72, 72, 72, 1);
     transition: .2s;
+    height: fit-content;
+    height: -moz-fit-content;
 }
+
+
 
 .checkbox-box.checked .img-checked{
     opacity: 1;
@@ -35,6 +39,8 @@
 }
 
 @media screen and (min-width : 768px) {
+
+ 
     .checkbox-modal, .add-skill-modal{
         position: absolute;
         bottom: -150%;
@@ -45,5 +51,12 @@
         width: 28px;
         height: 28px;
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    div.add-skill-modal{
+        min-width: 600px ;
+        transform: translateX(-70%);
     }
 }
