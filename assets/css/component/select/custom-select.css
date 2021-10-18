@@ -79,6 +79,11 @@
 
 
 /* search input */
+.custom-select-search-field .custom-select-list li:first-child{
+    border-radius: unset;
+    border-top: none;
+}
+
 .select-search{
     background: var(--colorSemiBlack);
     border-top-left-radius: 12px;

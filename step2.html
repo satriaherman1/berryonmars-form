@@ -45,7 +45,8 @@
                                     Area of expertiese*
                                 </p>
                                 <div class="position-relative custom-select-search-field mt-3">
-                                    <select class="custom-select-search" onclick="selectSearchClick(this)">
+                                    <select class="custom-select-search" id="searchExpertise"
+                                        onclick="selectSearchClick(this)">
                                         <option value="" disabled selected>Level</option>
                                         <option value="Junior Level">Junior Level</option>
                                         <option value="Mid Level">Mid Level</option>
@@ -53,9 +54,14 @@
                                         <option value="Super Level">Super Level</option>
 
                                     </select>
-                                    <ul class="custom-select-list d-none">
+                                    <div class="custom-select-list-box d-none">
+                                        <div class="search">
 
-                                    </ul>
+                                        </div>
+                                        <ul class="custom-select-list" id="expertiseSelect">
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mt-3">
